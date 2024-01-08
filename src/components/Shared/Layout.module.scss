@@ -1,0 +1,19 @@
+@import '../../styles/common/vars';
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 21;
+  
+    @media screen and (min-width: 1440px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+.pageHeader {
+  background-color: $main-blue-color;
+  border-bottom: 1px solid $primary-white-color;
+}
