@@ -7,7 +7,7 @@ const Navigation = () => {
       <ul className={css.list}>
         <li>
           <NavLink to="/" className={css.link}>
-            Домашня
+            Головна
           </NavLink>
         </li>
         <li>
@@ -16,13 +16,23 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/games" className={css.link}>
+            Матчі
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/gallery" className={css.link}>
             Галерея
           </NavLink>
         </li>
         <li>
-          <NavLink to="/media" className={css.link}>
-            Медіа
+          <NavLink to="/press" className={css.link}>
+            Преса
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/video" className={css.link}>
+            Відео
           </NavLink>
         </li>
         <li>

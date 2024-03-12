@@ -4,7 +4,9 @@ import TeamPage from "./pages/TeamPage";
 import HomePage from "./pages/HomePage";
 import GalleryPage from "./pages/GalleryPage";
 import ContactsPage from "./pages/ContactsPage";
-import MediaPage from "./pages/MediaPage";
+import PressPage from "./pages/PressPage";
+import VideoPage from "./pages/VideoPage";
+import GamesPage from "./pages/GamesPage";
 
 function App() {
 
@@ -13,8 +15,10 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="/team" element={<TeamPage />} />
-        <Route path="/media" element={<MediaPage />} />        
+        <Route path="/games" element={<GamesPage />} />       
+        <Route path="/press" element={<PressPage />} />        
         <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/video" element={<VideoPage />} />
         <Route path="/contacts" element={<ContactsPage />} />        
         <Route path="*" element={<Navigate to="/" replace={true} />}></Route>
       </Route>

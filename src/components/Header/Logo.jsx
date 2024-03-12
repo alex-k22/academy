@@ -1,5 +1,5 @@
 // import SiteLogo from "../../assets/afk-logo.svg?react";
-import ReactLogo from '../../assets/afk-logo.png';
+import ReactLogo from '../../assets/afk-logo-60x60.png';
 import css from "./Logo.module.scss";
 import { Link } from "react-router-dom";
 

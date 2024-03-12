@@ -1,6 +1,6 @@
 import Container from "../components/Shared/Container";
 
-const MediaPage = () => {
+const PressPage = () => {
     return (
         <section className="section">
           <Container>
@@ -12,4 +12,4 @@ const MediaPage = () => {
       );
 }
 
-export default MediaPage;
+export default PressPage;
