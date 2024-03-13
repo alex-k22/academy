@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  //gap: 6px;
+  gap: 2px;
   list-style: none;
   margin: 0;
   margin-left: auto;
@@ -27,25 +27,21 @@
   line-height: 20px;
   font-weight: 600;
   text-decoration: none;
-    border-bottom: 5px solid transparent;
-  //border: 1px solid rgba($color: $primary-white-color, $alpha: 0.2);
+  border-bottom: 5px solid transparent;
   padding: 25px 16px;
   color: $primary-white-color;
   background-color: transparent;
   transition: border-bottom $transition;
 
   &[aria-current] {
-    //background-color: $hover-blue-color;
-    color: #15DB95;
-    border-bottom: 5px solid #15DB95;
+    color: $hover-color;
+    border-bottom: 5px solid $hover-color;
   }
 
   &:hover,
   &:focus {
-    //background-color: $hover-blue-color;
-    //color: $primary-white-color;
-    color: #15DB95;
-    border-bottom: 5px solid #15DB95;
+    color: $hover-color;
+    border-bottom: 5px solid $hover-color;
   }
 
 }

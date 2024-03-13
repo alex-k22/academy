@@ -1,11 +1,13 @@
 import Container from "../components/Shared/Container";
+import ArticlesSet from "../components/ArticlesSet/ArticlesSet";
+import articles from "../../public/press.json";
 
 const PressPage = () => {
     return (
         <section className="section">
           <Container>
             <div>
-                This page contains news about our team...
+                <ArticlesSet articles={articles} />
             </div>
           </Container>
         </section>
