@@ -15,9 +15,13 @@
     }
 
     @media screen and (min-width: 768px) {
+        width: 232px;
+        height: 300px;
+    }
+
+    @media screen and (min-width: 1440px) {
         width: 240px;
         height: 300px;
-        
     }
 }
 .image {
