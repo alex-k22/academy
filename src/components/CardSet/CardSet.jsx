@@ -1,5 +1,5 @@
 import Article from "../Article/Artcle";
-import css from "./ArticlesSet.module.scss";
+import css from "./CardSet.module.scss";
 
 
 const ArticlesSet = ( {articles} ) => {

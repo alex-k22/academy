@@ -1,0 +1,28 @@
+@import '../../styles/common/vars';
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    //padding-top: 5px;
+    //padding-bottom: 5px;
+    z-index: 21;
+  
+    @media screen and (min-width: 1440px) {
+      //padding-top: 10px;
+      //padding-bottom: 10px;
+    }
+  }
+.pageHeader {
+  background-color: $main-color;
+  border-bottom: 1px solid $primary-white-color;
+}
+.burgerIcon {
+  width: 100px;
+  height: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 38px;
+    height: 38px;
+  }
+}
