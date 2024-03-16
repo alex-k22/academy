@@ -21,12 +21,12 @@
 }
 .link {
   display: block;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 21px;
   font-weight: 600;
   text-decoration: none;
   border-bottom: 5px solid transparent;
-  padding: 25px 16px;
+  padding: 20px 25px;
   color: $primary-white-color;
   background-color: transparent;
   transition: border-bottom $transition;
@@ -45,5 +45,6 @@
   @media screen and (min-width: 1440px) {
     font-size: 15px;
     line-height: 20px;
+    padding: 25px 16px;
   }
 }
