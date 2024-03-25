@@ -1,6 +1,6 @@
 import Container from "../components/Shared/Container";
 import ArticlesSet from "../components/CardSet/CardSet";
-import articles from "../../public/press.json";
+import articles from "../assets/press.json";
 
 const PressPage = () => {
     return (
