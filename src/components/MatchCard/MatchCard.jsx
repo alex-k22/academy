@@ -6,6 +6,7 @@ import {
   IoIosVideocam,
   IoIosLink,
 } from "react-icons/io";
+import defaultLogo from '../../assets/default-logo.png';
 
 const MatchCard = ({ results }) => {
   const {
@@ -20,9 +21,12 @@ const MatchCard = ({ results }) => {
     reportURL,
     videoURL,
     matchInfo,
+    team1Logo,
+    team2Logo,
   } = results;
 
   const corDate = formatDate(new Date(date));
+  console.log(team1Logo);
   return (
     <li className={css.card}>
       <div className={css.cardTitle}>
@@ -30,14 +34,20 @@ const MatchCard = ({ results }) => {
         <div>{competition}</div>
       </div>
       <div className={css.matchResult}>
-        <div className={css.team1}>{team1}</div>
+        <div className={css.team1}>
+          {team1}
+          <img src={team1Logo || defaultLogo} alt={team1} className={css.clubLogo} />
+        </div>
         <div>
           <div className={css.score}>
             <div className={css.scoreDigit}>{team1Score}</div>
             <div className={css.scoreDigit}>{team2Score}</div>
           </div>
         </div>
-        <div className={css.team2}>{team2}</div>
+        <div className={css.team2}>
+          <img src={team2Logo || defaultLogo} alt={team2} className={css.clubLogo} />
+          {team2}
+        </div>
       </div>
 
       {matchInfo && (
