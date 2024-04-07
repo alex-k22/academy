@@ -15,6 +15,7 @@
 .pageHeader {
   background-color: $main-color;
   border-bottom: 1px solid $primary-white-color;
+  margin-bottom: 50px;
 }
 .burgerIcon {
   width: 32px;
@@ -38,7 +39,6 @@
 
   overflow: auto;
   z-index: 20;
-  // transform: translateY(-150vh);
   transform: translateX(101vw);
   transition: transform $transition;
   background-color: $main-color;
