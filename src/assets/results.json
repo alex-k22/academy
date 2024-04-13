@@ -304,5 +304,41 @@
   "reportURL": "",
   "imageURL": "",
   "videoURL": ""
+},
+  {
+  "date": "2024-04-12T12:00:00.000Z",
+  "team1": "АФК",
+  "team1Score": "2",
+  "team2": "Ніка-05 Каскад-1",
+  "team2Score": "0",
+  "goals": "Прихідько (2)",
+  "matchResult": "перемога",
+  "place": "м. Івано-Франківськ",
+  "matchInfo": "",
+  "competition": "Турнір",
+  "competitionURL": "",
+  "team1Logo": "/img/logos/afk-logo-60x60.png",
+  "team2Logo": "",
+  "reportURL": "",
+  "imageURL": "",
+  "videoURL": ""
+},
+  {
+  "date": "2024-04-12T15:20:00.000Z",
+  "team1": "АФК",
+  "team1Score": "0",
+  "team2": "Ніка-05 Каскад-2",
+  "team2Score": "0",
+  "goals": "",
+  "matchResult": "нічия",
+  "place": "м. Івано-Франківськ",
+  "matchInfo": "",
+  "competition": "Турнір",
+  "competitionURL": "",
+  "team1Logo": "/img/logos/afk-logo-60x60.png",
+  "team2Logo": "",
+  "reportURL": "",
+  "imageURL": "",
+  "videoURL": ""
 }
 ]

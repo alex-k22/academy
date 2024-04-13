@@ -26,7 +26,7 @@ const MatchCard = ({ results }) => {
   } = results;
 
   const corDate = formatDate(new Date(date));
-  console.log(team1Logo);
+  
   return (
     <li className={css.card}>
       <div className={css.cardTitle}>
