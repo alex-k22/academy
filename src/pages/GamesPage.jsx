@@ -33,7 +33,7 @@ const GamesPage = () => {
     fetchData();
   }, []);
 
-  const sortedResults = [...allResults].sort(
+  const sortedResults = [...allResults].filter((match) => match.isPublished == true).sort(
     (a, b) => new Date(b.date) - new Date(a.date)
   );
 
