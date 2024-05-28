@@ -10,21 +10,21 @@ const Navigation = () => {
             Головна
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/team" className={css.link}>
             Команда
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to="/games" className={css.link}>
             Матчі
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/gallery" className={css.link}>
             Галерея
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to="/press" className={css.link}>
             Преса
@@ -35,11 +35,11 @@ const Navigation = () => {
             Відео
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/contacts" className={css.link}>
             Контакти
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

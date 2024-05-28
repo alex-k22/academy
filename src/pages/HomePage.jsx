@@ -1,11 +1,12 @@
 import Container from "components/Shared/Container";
+import css from "./HomePage.module.scss";
 
 const HomePage = () => {
   return (
     <section className="section">
       <Container>
-        <div>
-            This is Home page
+        <div className={css.mainImage}>
+            АФК
         </div>
       </Container>
     </section>

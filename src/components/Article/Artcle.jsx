@@ -1,7 +1,7 @@
 import { useState } from "react";
 import css from "./Article.module.scss";
 import { TfiCalendar } from "react-icons/tfi";
-import defaultImage from '../../assets/default-image-2024.png';
+import defaultImage from '../../assets/img/default-image-2024.png';
 
 
 const Article = ({ articles }) => {
