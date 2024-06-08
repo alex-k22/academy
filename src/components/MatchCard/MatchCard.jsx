@@ -6,7 +6,7 @@ import {
   IoIosVideocam,
   IoIosLink,
 } from "react-icons/io";
-import defaultLogo from '../../assets/default-logo.png';
+import defaultLogo from '../../assets/img/logo/default-logo.png';
 
 const MatchCard = ({ results }) => {
   const {
