@@ -6,6 +6,7 @@ import {
   IoIosVideocam,
   IoIosLink,
 } from "react-icons/io";
+import FormatDate from "../../helpers/FormatDate";
 import defaultLogo from '../../assets/img/logo/default-logo.png';
 
 const MatchCard = ({ results }) => {
@@ -25,12 +26,11 @@ const MatchCard = ({ results }) => {
     team2Logo,
   } = results;
 
-  const corDate = formatDate(new Date(date));
   
   return (
     <li className={css.card}>
       <div className={css.cardTitle}>
-        <div>{corDate}</div>
+        <div>{FormatDate(new Date(date))}</div>
         <div>{competition}</div>
       </div>
       <div className={css.matchResult}>
@@ -95,15 +95,3 @@ const MatchCard = ({ results }) => {
 
 export default MatchCard;
 
-function formatDate(date) {
-  var dd = date.getDate();
-  if (dd < 10) dd = "0" + dd;
-
-  var mm = date.getMonth() + 1;
-  if (mm < 10) mm = "0" + mm;
-
-  var yy = date.getFullYear() % 100;
-  if (yy < 10) yy = "0" + yy;
-
-  return dd + "." + mm + "." + yy;
-}
