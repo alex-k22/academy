@@ -1,7 +1,6 @@
 import { useState } from "react";
 import css from "../VideoCard/VideoCard.module.scss";
 import { MdCalendarToday, MdOutlinePlayCircleOutline } from "react-icons/md";
-import { FaRegCirclePlay } from "react-icons/fa6";
 import defaultImage from "../../assets/img/default-image-2024.png";
 import FormatDate from "../../helpers/FormatDate";
 
