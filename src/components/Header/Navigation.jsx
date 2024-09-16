@@ -27,7 +27,7 @@ const Navigation = () => {
         </li> */}
         <li>
           <NavLink to="/press" className={css.link}>
-            Преса
+            Новини
           </NavLink>
         </li>
         <li>

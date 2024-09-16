@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 import Container from "../Shared/Container";
 import css from "./Header.module.scss";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import { RxHamburgerMenu, RxCross2  } from "react-icons/rx";
+import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 
 const Header = () => {
   const [mobileMenuVisible, setMobilMenuVisible] = useState(false);
@@ -38,28 +38,28 @@ const Header = () => {
             <Logo />
             {width > 1440 && <Navigation />}
 
-          {width < 1440 && (
+            {width < 1440 && (
               <button
                 className={css.btn}
                 type="button"
                 onClick={handleMobileToggle}
               >
                 {mobileMenuVisible ? (
-                  <RxCross2 className={css.burgerIcon}/>
+                  <RxCross2 className={css.burgerIcon} />
                 ) : (
-                    <RxHamburgerMenu className={css.burgerIcon} />
+                  <RxHamburgerMenu className={css.burgerIcon} />
                 )}
               </button>
             )}
-          {width < 1440 && (
-          <div
-            className={`${css.mobile} ${mobileMenuVisible ? visible : ''}`}
-            onClick={handleNavClick}
-          >
-            {width < 1440 && <Navigation />}
+            {width < 1440 && (
+              <div
+                className={`${css.mobile} ${mobileMenuVisible ? visible : ""}`}
+                onClick={handleNavClick}
+              >
+                {width < 1440 && <Navigation />}
+              </div>
+            )}
           </div>
-        )}
-                  </div>
         </Container>
       </header>
     </>
