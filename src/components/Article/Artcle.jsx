@@ -4,14 +4,13 @@ import { TfiCalendar } from "react-icons/tfi";
 import defaultImage from '../../assets/img/default-image-2024.png';
 
 
-const Article = ({ articles }) => {
-  const { url, title, date, image } = articles;
+const Article = ({ news }) => {
+  const { url, title, date, image } = news;
   const [imgSrc, setImgSrc] = useState(image);
 
   const handleError = () => {
     setImgSrc(defaultImage);
   }
-
  
   return (
     <li className={css.article}>

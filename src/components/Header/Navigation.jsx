@@ -2,7 +2,7 @@ import css from "./Navigation.module.scss";
 import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
-   return (
+  return (
     <nav className={css.nav}>
       <ul className={css.list}>
         <li>
@@ -16,6 +16,11 @@ const Navigation = () => {
           </NavLink>
         </li> */}
         <li>
+          <NavLink to="/news" className={css.link}>
+            Новини
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/games" className={css.link}>
             Матчі
           </NavLink>
@@ -25,11 +30,6 @@ const Navigation = () => {
             Галерея
           </NavLink>
         </li> */}
-        <li>
-          <NavLink to="/press" className={css.link}>
-            Новини
-          </NavLink>
-        </li>
         <li>
           <NavLink to="/video" className={css.link}>
             Відео

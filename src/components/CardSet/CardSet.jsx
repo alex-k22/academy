@@ -2,11 +2,11 @@ import Article from "../Article/Artcle";
 import css from "./CardSet.module.scss";
 
 
-const ArticlesSet = ( {articles} ) => {
+const ArticlesSet = ( {news} ) => {
 return (
     <ul className={css.set}>
-        {articles.map((articles) => {
-            return <Article articles={articles} key={articles.url} />
+        {news.map((news) => {
+            return <Article news={news} key={news.url} />
         })}
     </ul>
 )
