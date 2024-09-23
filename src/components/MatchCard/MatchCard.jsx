@@ -24,6 +24,7 @@ const MatchCard = ({ results }) => {
     matchInfo,
     team1Logo,
     team2Logo,
+    competitionURL
   } = results;
 
   
@@ -31,7 +32,7 @@ const MatchCard = ({ results }) => {
     <li className={css.card}>
       <div className={css.cardTitle}>
         <div>{FormatDate(new Date(date))}</div>
-        <div>{competition}</div>
+        {competitionURL ? (<a href={competitionURL} target="blank"><div>{competition}</div></a>) : (<div>{competition}</div>)}
       </div>
       <div className={css.matchResult}>
         <div className={css.team1}>
