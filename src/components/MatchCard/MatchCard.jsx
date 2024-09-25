@@ -7,7 +7,7 @@ import {
   IoIosLink,
 } from "react-icons/io";
 import FormatDate from "../../helpers/FormatDate";
-import defaultLogo from '../../assets/img/logo/default-logo.png';
+import getTeamLogo from "../../helpers/getTeamLogo";
 
 const MatchCard = ({ results }) => {
   const {
@@ -27,6 +27,10 @@ const MatchCard = ({ results }) => {
     competitionURL
   } = results;
 
+  const logo1Url = team1Logo || getTeamLogo(team1);
+  const logo2Url = team2Logo || getTeamLogo(team2);
+  console.log(logo1Url);
+  console.log(logo2Url);
   
   return (
     <li className={css.card}>
@@ -37,7 +41,7 @@ const MatchCard = ({ results }) => {
       <div className={css.matchResult}>
         <div className={css.team1}>
           {team1}
-          <img src={team1Logo || defaultLogo} alt={team1} className={css.clubLogo} />
+          <img src={logo1Url} alt={team1} className={css.clubLogo} />
         </div>
         <div>
           <div className={css.score}>
@@ -46,7 +50,7 @@ const MatchCard = ({ results }) => {
           </div>
         </div>
         <div className={css.team2}>
-          <img src={team2Logo || defaultLogo} alt={team2} className={css.clubLogo} />
+          <img src={logo2Url} alt={team2} className={css.clubLogo} />
           {team2}
         </div>
       </div>
