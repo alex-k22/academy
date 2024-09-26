@@ -1,6 +1,7 @@
 import { useState } from "react";
 import css from "./Article.module.scss";
-import { TfiCalendar } from "react-icons/tfi";
+import { MdCalendarToday } from "react-icons/md";
+import FormatDate from "../../helpers/FormatDate";
 import defaultImage from '../../assets/img/default-image-2024.png';
 
 
@@ -18,7 +19,7 @@ const Article = ({ news }) => {
         <img src={imgSrc} alt={title} className={css.image} onError={handleError}/>
         <div className={css.text}>
           <p className={css.date}>
-            <TfiCalendar /> {date}
+            <MdCalendarToday /> {FormatDate(new Date(date))}
           </p>
           <h2 className={css.title}>{title}</h2>
           
