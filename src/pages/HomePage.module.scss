@@ -1,15 +1,24 @@
+@import "../styles/common/vars";
+
 .mainImage {
-    height: 211px;
+    height: 200px;
     background-size: cover, cover;
     background-position: center;
-    background-image: url(/img/bg/homepage_bg_large.jpg);
+    background-image: url(/img/bg/homepage_bg_mobile.jpg);
 
 
     @media screen and (min-width: 768px) {
-        height: 514px;
+        background-image: url(/img/bg/homepage_bg_tablet.jpg);
+        height: 350px;
     }
 
     @media screen and (min-width: 1440px) {
-        height: 1071px;
+        background-image: url(/img/bg/homepage_bg_desktop.jpg);
+        height: 550px;
     }
+}
+h1 {
+    text-align: center;
+    background-color: rgba($main-color, .6);
+    color: white;
 }
