@@ -1,0 +1,40 @@
+.match {
+    display: flex;
+    gap: 5px;
+    // justify-content: center;
+    align-items: center;
+    border: 1px dotted gray;
+}
+.digit {
+    font-weight: 600;
+    border: 1px solid gray;
+    width: 20px;
+    text-align: center;
+}
+.score {
+    display: flex;
+}
+.team1 {
+    text-align: right;
+    width: 160px;
+
+    @media screen and (min-width: 768px) {
+        width: 359px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 615px;
+    }
+}
+
+.team2 {
+    width: 160px;
+
+    @media screen and (min-width: 768px) {
+        width: 359px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 615px;
+    }
+}

@@ -15,6 +15,7 @@ const teamLogos = {
   "Буревій" : "https://dufldo.com.ua/wp-content/uploads/2023/09/Bureviy-696x696.jpg",
   "ДЮСШ-2" : "https://afk.pp.ua/img/logo/dyush2.png",
   "ДЮСШ-7-Океан-2" : "https://dufldo.com.ua/wp-content/uploads/2021/08/okean.jpg",
+  "Олімпія-Дніпро" : "https://duf-futsal.com.ua/frontend/webcontent/images/websites/5/teams/2020_06_14_21_06_34_1592159434.jpg",
 };
 
 const getTeamLogo = (teamName) => {
