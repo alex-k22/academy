@@ -84,7 +84,7 @@ console.log(matches);
         </thead>
         <tbody>
           {table.map((team, index) => (
-            <tr key={team.name}>
+            <tr key={team.name} className={team.name === "ДЮФК Юніон" ? css.bold : ""}>
               <td>{index + 1}</td>
               <td>{team.name}</td>
               <td align="center">{team.games}</td>

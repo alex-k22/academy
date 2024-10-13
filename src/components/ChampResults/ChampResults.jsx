@@ -67,7 +67,9 @@ const ChampResults = () => {
                   <tr key={match.id}>
                     {/* <td>{FormatDate(new Date(match.date))}</td> */}
                     <td className={css.team1} align="right" valign="center">
-                      {match.team1}
+                    <p className={match.team1 === "ДЮФК Юніон" ? css.bold : ""}>
+  {match.team1}
+</p>
                       <img
                         src={getTeamLogo(match.team1)}
                         alt={match.team1}
@@ -84,7 +86,9 @@ const ChampResults = () => {
                         alt={match.team2}
                         className={css.clubLogo}
                       ></img>
-                      {match.team2}
+                      <p className={match.team2 === "ДЮФК Юніон" ? css.bold : ""}>
+  {match.team2}
+</p>
                     </td>
                   </tr>
                 ))}
