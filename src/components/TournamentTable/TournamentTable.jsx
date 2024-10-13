@@ -72,7 +72,7 @@ console.log(matches);
           <tr>
             <th>№</th>
             <th>Команда</th>
-            <th>И</th>
+            <th>І</th>
             <th>В</th>
             <th>Н</th>
             <th>П</th>
