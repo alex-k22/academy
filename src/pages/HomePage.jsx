@@ -3,7 +3,7 @@ import PreviousMatch from "../components/PreviousMatch/PreviousMatch";
 import css from "./HomePage.module.scss";
 // import { useEffect, useState } from "react";
 // import StandingTable from "../components/StandingTable/StandingTable";
-import ChampResults from "../components/StandingTable/ChampResults/ChampResults";
+import ChampResults from "../components/ChampResults/ChampResults";
 
 const HomePage = () => {
   

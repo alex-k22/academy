@@ -1,0 +1,44 @@
+.wrapper {
+    margin-top: 10px;
+}
+.clubLogo {
+    // display: none;
+    display: inline;
+    height: 20px;
+    width: 20px;
+  
+    @media screen and (min-width: 768px) {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  .team1 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    // text-align: right;
+  }
+  .team2 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    // text-align: left;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: lightcyan;
+  }
+  table {
+    width: 100%;
+  }
+  .date {
+    font-size: 10px;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 10px;
+  }
