@@ -28,7 +28,7 @@ const PreviousMatch = () => {
 
         const pastMatch =
           results
-            .filter((match) => new Date(match.date) < now)
+            .filter((match) => new Date(match.date) < now && match.isPublished === true)
             .sort((a, b) => new Date(b.date) - new Date(a.date))[0] || null;
         console.log(pastMatch);
         console.log(pastMatch.date);
