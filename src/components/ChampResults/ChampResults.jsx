@@ -26,7 +26,7 @@ const ChampResults = () => {
         if (results.length > 0) {
           setStatus("resolved");
         }
-        const sortedResults = results.sort(
+        const sortedResults = results.filter((match) => match.isPublished == true).sort(
           (a, b) => new Date(b.date) - new Date(a.date)
         );
         setChampResults(sortedResults);
@@ -47,20 +47,6 @@ const ChampResults = () => {
         {champResults && (
           <div>
             <h2>Результати матчів чемпіонату області</h2>
-            {/* <ul>
-              {champResults.map((result) => {
-                return (
-                  <li className={css.match} key={result.id}>
-                    <div className={css.team1}>{result.team1} </div>
-                    <div className={css.score}>
-                      <p className={css.digit}>{result.team1Score}</p>
-                      <p className={css.digit}>{result.team2Score}</p>
-                    </div>
-                    <div className={css.team2}> {result.team2}</div>
-                  </li>
-                );
-              })}
-            </ul> */}
             <table>
               <tbody>
                 {champResults.map((match) => (

@@ -2,7 +2,6 @@ import Container from "components/Shared/Container";
 import PreviousMatch from "../components/PreviousMatch/PreviousMatch";
 import css from "./HomePage.module.scss";
 // import { useEffect, useState } from "react";
-// import StandingTable from "../components/StandingTable/StandingTable";
 import ChampResults from "../components/ChampResults/ChampResults";
 
 const HomePage = () => {
@@ -15,7 +14,6 @@ const HomePage = () => {
         </div>
         <PreviousMatch />
         <ChampResults />
-        {/* <StandingTable /> */}
       </Container>
     </section>
   );
