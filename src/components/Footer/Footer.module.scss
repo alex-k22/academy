@@ -1,0 +1,40 @@
+@import "../../styles/common/vars";
+
+.pageFooter {
+  background-color: $main-color;
+  border-bottom: 1px solid $primary-white-color;
+  margin-top: 20px;
+  color: $primary-white-color;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 21;
+
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+  }
+}
+.logo {
+  width: 20px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+.footerLinksHeader {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
