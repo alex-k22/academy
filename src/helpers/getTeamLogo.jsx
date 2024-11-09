@@ -20,7 +20,8 @@ const teamLogos = {
   "Олімпія-Дніпро" : "https://duf-futsal.com.ua/frontend/webcontent/images/websites/5/teams/2020_06_14_21_06_34_1592159434.jpg",
   "ДАФ Дніпро": "https://afk.pp.ua/img/logo/dnipro-logo.png",
   "ФК Парус-ДЮСШ-7-2013": "https://afk.pp.ua/img/logo/parus-logo.png",
-  "ФК Парус-ДЮСШ-7": "https://afk.pp.ua/img/logo/parus-logo.png"
+  "ФК Парус-ДЮСШ-7": "https://afk.pp.ua/img/logo/parus-logo.png",
+  "ДЮСШ Синельникове": "https://afk.pp.ua/img/logo/dyussh-sinelnikove-logo.png"
 };
 
 const getTeamLogo = (teamName) => {
