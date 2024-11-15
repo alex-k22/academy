@@ -1,5 +1,24 @@
+@import "../../styles/common/vars";
 .wrapper {
     margin-top: 10px;
+    // border: 1px solid $main-color;
+    border-radius: 5px;
+}
+.leagueHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.matchWrapper {
+  display: table-cell;
+    vertical-align: middle;
+}
+.score {
+  display: table-cell;
+    width: 70px;
+    vertical-align: middle;
+    text-align: center;
 }
 .clubLogo {
     // display: none;
@@ -12,25 +31,47 @@
       width: 20px;
     }
   }
+  .leagueLogo {
+    // display: none;
+    display: inline;
+    height: 36px;
+    width: 36px;
+  
+    @media screen and (min-width: 768px) {
+      height: 20px;
+      width: 20px;
+    }
+  }
   .team1 {
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 5px;
-    // text-align: right;
+    text-align: right;
   }
   .team2 {
     display: flex;
     align-items: center;
     gap: 5px;
-    // text-align: left;
+    text-align: left;
   }
-  tbody tr:nth-child(odd) {
-    background-color: white;
-  }
+  // tbody tr:nth-child(odd) {
+  //   background-color: white;
+  // }
   
-  tbody tr:nth-child(even) {
-    background-color: lightcyan;
+  // tbody tr:nth-child(even) {
+  //   background-color: lightcyan;
+  // }
+  .match {
+      display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  .match:nth-child(odd) {
+    background-color: rgba($main-color, 0.2);
+  }
+    .match:nth-child(even) {
+    background-color: $primary-white-color;
   }
   table {
     width: 100%;
@@ -45,4 +86,9 @@
 .bold {
     font-weight: 800;
     color: red;
+}
+.subHeader {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
 }

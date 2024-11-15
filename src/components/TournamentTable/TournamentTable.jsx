@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import css from "../TournamentTable/TournamentTable.module.scss";
+import getTeamLogo from "../../helpers/getTeamLogo";
 
 // Функция для вычисления статистики команд
 const calculateTable = (matches) => {
@@ -11,10 +12,28 @@ const calculateTable = (matches) => {
     const score2 = parseInt(team2Score, 10);
 
     if (!teams[team1]) {
-      teams[team1] = { name: team1, games: 0, wins: 0, draws: 0, losses: 0, goalsFor: 0, goalsAgainst: 0, points: 0 };
+      teams[team1] = {
+        name: team1,
+        games: 0,
+        wins: 0,
+        draws: 0,
+        losses: 0,
+        goalsFor: 0,
+        goalsAgainst: 0,
+        points: 0,
+      };
     }
     if (!teams[team2]) {
-      teams[team2] = { name: team2, games: 0, wins: 0, draws: 0, losses: 0, goalsFor: 0, goalsAgainst: 0, points: 0 };
+      teams[team2] = {
+        name: team2,
+        games: 0,
+        wins: 0,
+        draws: 0,
+        losses: 0,
+        goalsFor: 0,
+        goalsAgainst: 0,
+        points: 0,
+      };
     }
 
     teams[team1].games += 1;
@@ -41,22 +60,24 @@ const calculateTable = (matches) => {
   });
 
   // Преобразуем объект в массив и сортируем по очкам, а затем по разнице голов
-  return Object.values(teams).map(team => ({
-    ...team,
-    goalDifference: team.goalsFor - team.goalsAgainst, // Вычисляем разницу голов
-  })).sort((a, b) => {
-    const pointDifference = b.points - a.points;
-    if (pointDifference === 0) {
-      const goalDifferenceA = a.goalDifference;
-      const goalDifferenceB = b.goalDifference;
-      return goalDifferenceB - goalDifferenceA;
-    }
-    return pointDifference;
-  });
+  return Object.values(teams)
+    .map((team) => ({
+      ...team,
+      goalDifference: team.goalsFor - team.goalsAgainst, // Вычисляем разницу голов
+    }))
+    .sort((a, b) => {
+      const pointDifference = b.points - a.points;
+      if (pointDifference === 0) {
+        const goalDifferenceA = a.goalDifference;
+        const goalDifferenceB = b.goalDifference;
+        return goalDifferenceB - goalDifferenceA;
+      }
+      return pointDifference;
+    });
 };
 
-const TournamentTable = ( {matches} ) => {
-console.log(matches);
+const TournamentTable = ({ matches }) => {
+  console.log(matches);
   const [table, setTable] = useState([]);
 
   useEffect(() => {
@@ -66,7 +87,7 @@ console.log(matches);
 
   return (
     <div className={css.wrapper}>
-      <h2>Турнірна таблиця</h2>
+      <h3 className={css.subHeader}>Турнірна таблиця</h3>
       <table>
         <thead>
           <tr>
@@ -84,9 +105,20 @@ console.log(matches);
         </thead>
         <tbody>
           {table.map((team, index) => (
-            <tr key={team.name} className={team.name === "ДЮФК Юніон" ? css.bold : ""}>
+            <tr
+              key={team.name}
+              className={team.name === "ДЮФК Юніон" ? css.bold : ""}
+            >
               <td>{index + 1}</td>
-              <td>{team.name}</td>
+              <td className={css.team}>
+                {" "}
+                <img
+                  src={getTeamLogo(team.name)}
+                  alt={team.name}
+                  className={css.clubLogo}
+                ></img>
+                {team.name}
+              </td>
               <td align="center">{team.games}</td>
               <td align="center">{team.wins}</td>
               <td align="center">{team.draws}</td>

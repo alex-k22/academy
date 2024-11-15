@@ -1,8 +1,16 @@
+@import "../../styles/common/vars";
 .wrapper {
     margin-top: 10px;
 }
-table, tr {
-    border: 1px solid white;
+
+tr, td {
+    // border: 1px solid white;
+    border-bottom: 1px solid $main-color;
+    align-items: center;
+}
+thead {
+    background-color: $main-color;
+    color: $primary-white-color;
 }
 h2 {
     margin-bottom: 5px;
@@ -11,3 +19,25 @@ h2 {
     font-weight: 800;
     color: red;
 }
+.subHeader {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.clubLogo {
+    display: none;
+        height: 20px;
+    width: 20px;
+  
+    @media screen and (min-width: 768px) {
+        display: inline;
+      height: 20px;
+      width: 20px;
+    }
+  }
+  .team {
+    display: flex;
+    gap: 2px;
+    // justify-content: center;
+    align-items: center;
+  }

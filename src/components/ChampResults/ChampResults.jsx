@@ -4,10 +4,9 @@ import { getData } from "../../API/fetch";
 import Loader from "../Loader/Loader";
 import FormatDate from "../../helpers/FormatDate";
 import getTeamLogo from "../../helpers/getTeamLogo";
-// import Container from "components/Shared/Container";
-// import getTeamLogo from "../../../helpers/getTeamLogo";
 import css from "./ChampResults.module.scss";
 import TournamentTable from "../TournamentTable/TournamentTable";
+import dufldoLogo from "../../assets/img/logo/dufldo-logo.jpeg";
 
 const ChampResults = () => {
   const [champResults, setChampResults] = useState();
@@ -26,9 +25,9 @@ const ChampResults = () => {
         if (results.length > 0) {
           setStatus("resolved");
         }
-        const sortedResults = results.filter((match) => match.isPublished == true).sort(
-          (a, b) => new Date(b.date) - new Date(a.date)
-        );
+        const sortedResults = results
+          .filter((match) => match.isPublished == true)
+          .sort((a, b) => new Date(b.date) - new Date(a.date));
         setChampResults(sortedResults);
         console.log(results);
       } catch (error) {
@@ -46,41 +45,61 @@ const ChampResults = () => {
       <div>
         {champResults && (
           <div>
-            <h2>Результати матчів чемпіонату області</h2>
-            <table>
-              <tbody>
-                {champResults.map((match) => (
-                  <tr key={match.id}>
-                    {/* <td>{FormatDate(new Date(match.date))}</td> */}
-                    <td className={css.team1} align="right" valign="center">
-                    <p className={match.team1 === "ДЮФК Юніон" ? css.bold : ""}>
-  {match.team1}
-</p>
-                      <img
-                        src={getTeamLogo(match.team1)}
-                        alt={match.team1}
-                        className={css.clubLogo}
-                      ></img>
-                    </td>
-                    <td align="center">
-                      <p>{match.team1Score}:{match.team2Score}</p>
-                      <p className={css.date}>{FormatDate(new Date(match.date))}</p>
-                    </td>
-                    <td className={css.team2}  align="left" valign="center">
-                      <img
-                        src={getTeamLogo(match.team2)}
-                        alt={match.team2}
-                        className={css.clubLogo}
-                      ></img>
-                      <p className={match.team2 === "ДЮФК Юніон" ? css.bold : ""}>
-  {match.team2}
-</p>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            <div className={css.leagueHeader}>
+              <img src={dufldoLogo} alt="AFK Logo" className={css.leagueLogo} />
+              <h2>Чемпіонат області. 1 ліга</h2>
+            </div>
+
             <TournamentTable matches={champResults} />
+            <div>
+              <h3 className={css.subHeader}>Результати матчів</h3>
+              <ul>
+                {champResults.map((match) => (
+                  <li key={match.id} className={css.match}>
+                    <div className={css.matchWrapper}>
+                      <div className={css.team1}>
+                        <p
+                          className={
+                            match.team1 === "ДЮФК Юніон" ? css.bold : ""
+                          }
+                        >
+                          {match.team1}
+                        </p>
+                        <img
+                          src={getTeamLogo(match.team1)}
+                          alt={match.team1}
+                          className={css.clubLogo}
+                        ></img>
+                      </div>
+                    </div>
+                    <div className={css.score}>
+                      <p>
+                        {match.team1Score}:{match.team2Score}
+                      </p>
+                      <p className={css.date}>
+                        {FormatDate(new Date(match.date))}
+                      </p>
+                    </div>
+                    <div className={css.matchWrapper}>
+                      <div className={css.team2}>
+                        <img
+                          src={getTeamLogo(match.team2)}
+                          alt={match.team2}
+                          className={css.clubLogo}
+                        ></img>
+                        <p
+                          className={
+                            match.team2 === "ДЮФК Юніон" ? css.bold : ""
+                          }
+                        >
+                          {match.team2}
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         )}
         {status === "pending" && <Loader />}
