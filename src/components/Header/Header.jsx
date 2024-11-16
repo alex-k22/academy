@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState, useEffect} from "react";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
 import Container from "../Shared/Container";
@@ -19,6 +19,15 @@ const Header = () => {
       handleMobileToggle();
     }
   };
+
+  useEffect(() => {
+    if (mobileMenuVisible) {
+      document.body.classList.add("is-open");
+    }
+    if (!mobileMenuVisible) {
+      document.body.classList.remove("is-open");
+    }
+  }, [mobileMenuVisible]);
 
   return (
     <>
