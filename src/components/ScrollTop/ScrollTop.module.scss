@@ -1,0 +1,24 @@
+@import "../../styles/common/vars";
+.scrollTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 25px;
+  bottom: 50px;
+  z-index: 100;
+  width: 48px;
+  height: 48px;
+  background-color: $main-color;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 10%;
+  transition: $transition;
+  transform: translateY(50px);
+}
+.scrollTopActive {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
