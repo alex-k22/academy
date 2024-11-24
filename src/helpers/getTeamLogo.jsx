@@ -22,7 +22,9 @@ const teamLogos = {
   "ФК Парус-ДЮСШ-7-2013": "https://afk.pp.ua/img/logo/parus-logo.png",
   "ФК Парус-ДЮСШ-7": "https://afk.pp.ua/img/logo/parus-logo.png",
   "ДЮСШ Синельникове": "https://afk.pp.ua/img/logo/dyussh-sinelnikove-logo.png",
-  "Металург": "https://afk.pp.ua/img/logo/metalurg-logo.png"
+  "Металург": "https://afk.pp.ua/img/logo/metalurg-logo.png",
+  "Царичанка": "https://afk.pp.ua/img/logo/tsarichanka-logo.png",
+  "ДЮСШ Царичанка": "https://afk.pp.ua/img/logo/tsarichanka-logo.png"
 };
 
 const getTeamLogo = (teamName) => {
