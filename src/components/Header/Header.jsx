@@ -2,6 +2,7 @@ import { useState, useEffect} from "react";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
 import Container from "../Shared/Container";
+import Socials from "../Socials/Socials";
 import css from "./Header.module.scss";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
@@ -36,7 +37,7 @@ const Header = () => {
           <div className={css.wrapper}>
             <Logo />
             {width > 1440 && <Navigation />}
-
+            
             {width < 1440 && (
               <div
                 className={`${css.burgerBox} ${
@@ -53,6 +54,7 @@ const Header = () => {
                 onClick={handleNavClick}
               >
                 {width < 1440 && <Navigation />}
+                {width < 1440 && <Socials />}
               </div>
             )}
           </div>

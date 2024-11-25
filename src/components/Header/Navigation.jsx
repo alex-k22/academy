@@ -1,6 +1,7 @@
 import css from "./Navigation.module.scss";
 import { NavLink } from "react-router-dom";
 
+
 const Navigation = () => {
   return (
     <nav className={css.nav}>
@@ -41,7 +42,8 @@ const Navigation = () => {
           </NavLink>
         </li> */}
       </ul>
-    </nav>
+       </nav>
+    
   );
 };
 

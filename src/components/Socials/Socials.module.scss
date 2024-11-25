@@ -1,0 +1,45 @@
+@import "../../styles/common/vars";
+
+.wrapper {
+     margin-top: 60px;
+    border-top: 1px solid $primary-white-color;
+}
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    color: $primary-white-color;
+
+    @media  screen and (min-width: 1440px) {
+        margin: 0;
+        
+    }
+}
+.link {
+    display: block;
+&:hover .icon {
+    color: $hover-color;
+    transform: scale(1.2);
+}
+}
+.icon {
+    font-size: 32px;
+   
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+    }
+}
+.subHeader {
+    font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 10px;
+  border-bottom: 5px solid transparent;
+  color: $primary-white-color;
+}

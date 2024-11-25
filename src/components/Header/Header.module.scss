@@ -28,7 +28,7 @@
   left: 0px;
   padding-top: 40px;
 
-  overflow: auto;
+  overflow: scroll;
   z-index: 20;
   transform: translateX(101vw);
   transition: transform $transition;
