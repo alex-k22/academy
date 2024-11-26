@@ -13,6 +13,7 @@
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
+  border: 1px solid $primary-white-color;
   border-radius: 10%;
   transition: $transition;
   transform: translateY(50px);
