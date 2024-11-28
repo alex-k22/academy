@@ -24,7 +24,8 @@ const teamLogos = {
   "ДЮСШ Синельникове": "https://afk.pp.ua/img/logo/dyussh-sinelnikove-logo.png",
   "Металург": "https://afk.pp.ua/img/logo/metalurg-logo.png",
   "Царичанка": "https://afk.pp.ua/img/logo/tsarichanka-logo.png",
-  "ДЮСШ Царичанка": "https://afk.pp.ua/img/logo/tsarichanka-logo.png"
+  "ДЮСШ Царичанка": "https://afk.pp.ua/img/logo/tsarichanka-logo.png",
+  "НФК Дніпро": "https://afk.pp.ua/img/logo/NFC-dnipro-logo.png"
 };
 
 const getTeamLogo = (teamName) => {
