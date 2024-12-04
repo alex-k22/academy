@@ -25,7 +25,11 @@ const teamLogos = {
   "Металург": "https://afk.pp.ua/img/logo/metalurg-logo.png",
   "Царичанка": "https://afk.pp.ua/img/logo/tsarichanka-logo.png",
   "ДЮСШ Царичанка": "https://afk.pp.ua/img/logo/tsarichanka-logo.png",
-  "НФК Дніпро": "https://afk.pp.ua/img/logo/NFC-dnipro-logo.png"
+  "НФК Дніпро": "https://afk.pp.ua/img/logo/NFC-dnipro-logo.png",
+  "ФА Ротаня і Зозулі": "https://afk.pp.ua/img/logo/rotanya-logo.png",
+  "УФК-Кривбас Дніпро": "https://afk.pp.ua/img/logo/ufk-kryvbas.png",
+  "ХФК Пенуел": "https://afk.pp.ua/img/logo/penuel-logo.png",
+  "ДЮСШ-7": "https://afk.pp.ua/img/logo/dussh-7-logo.png"
 };
 
 const getTeamLogo = (teamName) => {
