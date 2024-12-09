@@ -29,7 +29,8 @@ const teamLogos = {
   "ФА Ротаня і Зозулі": "https://afk.pp.ua/img/logo/rotanya-logo.png",
   "УФК-Кривбас Дніпро": "https://afk.pp.ua/img/logo/ufk-kryvbas.png",
   "ХФК Пенуел": "https://afk.pp.ua/img/logo/penuel-logo.png",
-  "ДЮСШ-7": "https://afk.pp.ua/img/logo/dussh-7-logo.png"
+  "ДЮСШ-7": "https://afk.pp.ua/img/logo/dussh-7-logo.png",
+  "ФК Скорук": "https://afk.pp.ua/img/logo/fc-skoruk-logo.png"
 };
 
 const getTeamLogo = (teamName) => {
