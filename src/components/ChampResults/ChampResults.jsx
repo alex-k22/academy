@@ -8,15 +8,31 @@ import css from "./ChampResults.module.scss";
 import TournamentTable from "../TournamentTable/TournamentTable";
 import dufldoLogo from "../../assets/img/logo/dufldo-logo.jpeg";
 
-const ChampResults = () => {
-  const [champResults, setChampResults] = useState();
+const tournamentData = {
+  "region": {
+    "header": "Чемпіонат області. 1 ліга",
+    "endpoint": "champResults"
+  },
+"dnipro": {
+  "header": "Чемпіонат м. Дніпро. 1 ліга",
+  "endpoint": "dniproResults"
+}
+}
+
+const ChampResults = ({tournament}) => {
+  const [tournamentResults, setTournamentResults] = useState();
   const [status, setStatus] = useState("idle");
+  const currentTournament = tournamentData[tournament];
+  const sectionHeader = currentTournament.header;
+  const endpoint = currentTournament.endpoint;
+  
+  console.log("endpoint: ", endpoint);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         setStatus("pending");
-        const results = await getData("champResults");
+        const results = await getData(endpoint);
 
         if (results.length === 0) {
           Notify.failure("Нажаль, нічого не знайдено");
@@ -28,7 +44,7 @@ const ChampResults = () => {
         const sortedResults = results
           .filter((match) => match.isPublished == true)
           .sort((a, b) => new Date(b.date) - new Date(a.date));
-        setChampResults(sortedResults);
+        setTournamentResults(sortedResults);
         console.log(results);
       } catch (error) {
         Notify.failure(error.message);
@@ -36,26 +52,26 @@ const ChampResults = () => {
       }
     };
     fetchData();
-  }, []);
+  }, [endpoint]);
 
   /**/
-
+ 
   return (
     <section className={css.wrapper}>
       <div>
-        {champResults && (
+        {tournamentResults && (
           <div>
             <div className={css.leagueHeader}>
-              <img src={dufldoLogo} alt="AFK Logo" className={css.leagueLogo} />
-              <h2>Чемпіонат області. 1 ліга</h2>
+              <img src={dufldoLogo} alt="DUFLDO Logo" className={css.leagueLogo} />
+              <h2>{sectionHeader}</h2>
             </div>
             <div className={css.tableResults}>
-              <TournamentTable matches={champResults} />
+              <TournamentTable matches={tournamentResults} />
               {/* <input type="checkbox" className={css.readMoreChecker} id="read-more-checker" /> */}
               <div className={css.results}>
                 <h3 className={css.subHeader}>Результати матчів</h3>
                 <ul>
-                  {champResults.map((match) => (
+                  {tournamentResults.map((match) => (
                     <li key={match.id} className={css.match}>
                       <div className={css.matchWrapper}>
                         <div className={css.team1}>
