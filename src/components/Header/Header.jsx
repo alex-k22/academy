@@ -2,7 +2,7 @@ import { useState, useEffect} from "react";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
 import Container from "../Shared/Container";
-import Socials from "../Socials/Socials";
+// import Socials from "../Socials/Socials";
 import css from "./Header.module.scss";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
@@ -54,7 +54,7 @@ const Header = () => {
                 onClick={handleNavClick}
               >
                 {width < 1440 && <Navigation />}
-                {width < 1440 && <Socials />}
+                {/* {width < 1440 && <Socials />} */}
               </div>
             )}
           </div>
