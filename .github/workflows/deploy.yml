@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Для получения всей истории коммитов
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -34,6 +36,16 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
+      - name: Copy CNAME from main branch
+        run: |
+          # Проверяем, существует ли файл CNAME в ветке main
+          if [ -f CNAME ]; then
+            cp CNAME dist/  # Копируем CNAME в папку dist
+            echo "CNAME file copied from main branch."
+          else
+            echo "CNAME file not found in main branch."
+          fi
 
       - name: Deploy to GitHub Pages
         run: |
