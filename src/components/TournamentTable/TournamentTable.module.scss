@@ -17,7 +17,7 @@ h2 {
 }
 .bold {
     font-weight: 800;
-    color: red;
+    color: $highlight-color;
 }
 .subHeader {
     margin-top: 5px;
@@ -38,6 +38,5 @@ h2 {
   .team {
     display: flex;
     gap: 2px;
-    // justify-content: center;
     align-items: center;
   }
