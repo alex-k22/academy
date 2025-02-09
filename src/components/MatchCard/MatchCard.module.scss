@@ -1,17 +1,18 @@
 @import "../../styles/common/vars";
 
 .card {
-  border: 1px solid $hover-color;
-  background-color: white;
+  border: 1px solid $main-color;
+  background-color: $primary-white-color;
   border-radius: 6px;
   margin-bottom: 15px;
 }
 .cardTitle {
   display: flex;
   justify-content: space-between;
+  color: $primary-white-color;
   padding: 5px;
-  border-bottom: 1px solid $hover-color;
-  background-color: $hover-color;
+  border-bottom: 1px solid $main-color;
+  background-color: $main-color;
 }
 .matchResult {
   display: flex;
