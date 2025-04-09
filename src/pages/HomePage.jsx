@@ -3,6 +3,7 @@ import PreviousMatch from "../components/PreviousMatch/PreviousMatch";
 import css from "./HomePage.module.scss";
 // import { useEffect, useState } from "react";
 import ChampResults from "../components/ChampResults/ChampResults";
+import MatchSchedule from "../components/MatchSchedule/MatchSchedule";
 
 const HomePage = () => {
   
@@ -13,6 +14,7 @@ const HomePage = () => {
             <h1>АФК (ДЮФК Юніон)</h1>
         </div>
         <PreviousMatch />
+        <MatchSchedule />
         <ChampResults tournament={"region"}/>
         <ChampResults tournament={"dnipro"}/>
       </Container>
