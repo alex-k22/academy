@@ -13,8 +13,8 @@ const HomePage = () => {
             <h1>АФК (ДЮФК Юніон)</h1>
         </div>
         <PreviousMatch />
-        <ChampResults tournament={"dnipro"}/>
         <ChampResults tournament={"region"}/>
+        <ChampResults tournament={"dnipro"}/>
       </Container>
     </section>
   );
