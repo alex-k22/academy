@@ -15,7 +15,7 @@ const Footer = () => {
                 <h3 className={css.footerLinksHeader}>Корисні посилання:</h3>
               <ul>
               <li>
-                  <a href="https://www.youtube.com/@%D0%94%D0%AE%D0%A4%D0%9A%D0%AE%D0%BD%D1%96%D0%BE%D0%BD" className={css.link} target="blank">
+                  <a href="https://www.youtube.com/@afkunion" className={css.link} target="blank">
                     <img
                       src={youtubeLogo}
                       alt="Лого Youtube"

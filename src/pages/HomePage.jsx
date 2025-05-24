@@ -15,7 +15,7 @@ const HomePage = () => {
         </div>
         <PreviousMatch />
         {/* <MatchSchedule /> */}
-        <ChampResults tournament={"region"}/>
+        <ChampResults tournament={"region"} stages={2} cutoffDate="2025-05-12"/>
         <ChampResults tournament={"dnipro"}/>
       </Container>
     </section>
