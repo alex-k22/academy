@@ -4,16 +4,16 @@
     height: 200px;
     background-size: cover, cover;
     background-position: center;
-    background-image: url(/img/bg/homepage_bg_mobile-1.jpg);
+    background-image: url(/img/bg/homepage_bg_mobile-2.webp);
 
 
     @media screen and (min-width: 768px) {
-        background-image: url(/img/bg/homepage_bg_tablet-1.jpg);
+        background-image: url(/img/bg/homepage_bg_tablet-2.webp);
         height: 350px;
     }
 
     @media screen and (min-width: 1440px) {
-        background-image: url(/img/bg/homepage_bg_desktop-1.jpg);
+        background-image: url(/img/bg/homepage_bg_desktop-2.webp);
         height: 550px;
     }
 }
