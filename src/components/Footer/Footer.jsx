@@ -10,7 +10,11 @@ const Footer = () => {
       <footer className={css.pageFooter}>
         <Container>
           <div className={css.wrapper}>
-            <p>(c) Футбольний клуб АФК (ДЮФК Юніон), 2024</p>
+            <div>
+              <p>(c) Футбольний клуб АФК (ДЮФК Юніон), 2025</p>
+              <a href="mailto:dufkunion2012@gmail.com" className={css.link}>dufkunion2012@gmail.com</a>
+            </div>
+            
             <div>
                 <h3 className={css.footerLinksHeader}>Корисні посилання:</h3>
               <ul>
