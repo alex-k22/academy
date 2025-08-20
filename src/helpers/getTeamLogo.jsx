@@ -32,7 +32,8 @@ const teamLogos = {
   "ДЮСШ-7": "https://afk.pp.ua/img/logo/dussh-7-logo.png",
   "ФК Скорук": "https://afk.pp.ua/img/logo/fc-skoruk-logo.png",
   "Надія-Nova": "https://afk.pp.ua/img/logo/nadiya-nova-logo.png",
-  "Інгулець": "https://afk.pp.ua/img/logo/inhulets.png"
+  "Інгулець": "https://afk.pp.ua/img/logo/inhulets.png",
+  "Прикарпаття": "https://afk.pp.ua/img/logo/prykarpattya.png"
 };
 
 const getTeamLogo = (teamName) => {
