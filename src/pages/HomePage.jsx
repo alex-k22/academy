@@ -14,11 +14,11 @@ const HomePage = () => {
         <div className={css.mainImage}>
             <h1>АФК (ДЮФК Юніон)</h1>
         </div>
-        <Info />
+        {/* <Info /> */}
         <PreviousMatch />
         {/* <MatchSchedule /> */}
-        <ChampResults tournament={"region"} stages={2} cutoffDate="2025-05-12"/>
-        <ChampResults tournament={"dnipro"}/>
+        {/* <ChampResults tournament={"region"} stages={2} cutoffDate="2025-05-12"/> */}
+        {/* <ChampResults tournament={"dnipro"}/> */}
       </Container>
     </section>
   );
