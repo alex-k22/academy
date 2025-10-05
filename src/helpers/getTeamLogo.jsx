@@ -9,6 +9,7 @@ const teamLogos = {
   "Надія-Рапід": "https://afk.pp.ua/img/logo/nadiya-logo.png",
   "МДЮСШ": "https://afk.pp.ua/img/logo/mdussh-logo.png",
   "МДЮСШ-2": "https://afk.pp.ua/img/logo/mdussh-logo.png",
+  "МДЮСШ-3": "https://afk.pp.ua/img/logo/mdussh-logo.png",
   "ДЮСШ ФА Кривбас" : "https://afk.pp.ua/img/logo/kryvbas-logo.png",
   "ДЮСШ ФА Кривбас-2" : "https://afk.pp.ua/img/logo/kryvbas-logo.png",
   "Інтер-2013" : "https://afk.pp.ua/img/logo/inter-dnepr.png",
@@ -34,7 +35,8 @@ const teamLogos = {
   "Надія-Nova": "https://afk.pp.ua/img/logo/nadiya-nova-logo.png",
   "Інгулець": "https://afk.pp.ua/img/logo/inhulets.png",
   "Прикарпаття": "https://afk.pp.ua/img/logo/prykarpattya.png",
-  "Winner":"https://afk.pp.ua/img/logo/winner.png"
+  "Winner":"https://afk.pp.ua/img/logo/winner.png",
+"Дніпровець":"https://afk.pp.ua/img/logo/dniprovets.jpg",
 };
 
 const getTeamLogo = (teamName) => {
