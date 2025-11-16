@@ -29,7 +29,9 @@ const teamLogos = {
   "Прикарпаття": "https://afk.pp.ua/img/logo/prykarpattya.png",
   "Winner":"https://afk.pp.ua/img/logo/winner.png",
 "Дніпровець":"https://afk.pp.ua/img/logo/dniprovets.jpg",
-"Академія Ротаня і Зозулі":"https://afk.pp.ua/img/logo/rotanya-logo.png"
+"Академія Ротаня і Зозулі":"https://afk.pp.ua/img/logo/rotanya-logo.png",
+"ДЮСШ Солоне":"https://afk.pp.ua/img/logo/solone.png",
+"ДЮСШ-7-Амур":"https://afk.pp.ua/img/logo/amur-logo.png"
 };
 
 const getTeamLogo = (teamName) => {
