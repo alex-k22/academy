@@ -7,7 +7,7 @@ import ContactsPage from "./pages/ContactsPage";
 import NewsPage from "./pages/NewsPage";
 import VideoPage from "./pages/VideoPage";
 import GamesPage from "./pages/GamesPage";
-import NewsDetailPage from "./pages/NewsDetailPage";
+import InternalNewsPage from "./pages/InternalNewsPage";
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
         <Route path="/team" element={<TeamPage />} />
         <Route path="/games" element={<GamesPage />} />       
         <Route path="/news" element={<NewsPage />} />  
-        <Route path="/news/:id" element={<NewsDetailPage />} />      
+        <Route path="/news/:newsId" element={<InternalNewsPage />} />      
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/video" element={<VideoPage />} />
         <Route path="/contacts" element={<ContactsPage />} />        

@@ -1,15 +1,15 @@
+// components/CardSet/CardSet.jsx
 import Article from "../Article/Artcle";
 import css from "./CardSet.module.scss";
 
-
-const ArticlesSet = ( {news} ) => {
-return (
+const CardSet = ({ news }) => {
+  return (
     <ul className={css.set}>
-        {news.map((news) => {
-            return <Article news={news} key={news.url} />
-        })}
+      {news.map((newsItem) => {
+        return <Article news={newsItem} key={newsItem.id || newsItem.url} />
+      })}
     </ul>
-)
-}
+  );
+};
 
-export default ArticlesSet;
+export default CardSet;

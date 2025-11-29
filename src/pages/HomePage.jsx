@@ -1,9 +1,9 @@
 import Container from "components/Shared/Container";
 import PreviousMatch from "../components/PreviousMatch/PreviousMatch";
-import Info from "../components/Info/Info";
+//import Info from "../components/Info/Info";
 import css from "./HomePage.module.scss";
 // import { useEffect, useState } from "react";
-import ChampResults from "../components/ChampResults/ChampResults";
+//import ChampResults from "../components/ChampResults/ChampResults";
 // import MatchSchedule from "../components/MatchSchedule/MatchSchedule";
 
 const HomePage = () => {
