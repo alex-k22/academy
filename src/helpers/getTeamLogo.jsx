@@ -31,7 +31,8 @@ const teamLogos = {
 "Дніпровець":"https://afk.pp.ua/img/logo/dniprovets.jpg",
 "Академія Ротаня і Зозулі":"https://afk.pp.ua/img/logo/rotanya-logo.png",
 "ДЮСШ Солоне":"https://afk.pp.ua/img/logo/solone.png",
-"ДЮСШ-7-Амур":"https://afk.pp.ua/img/logo/amur-logo.png"
+"ДЮСШ-7-Амур":"https://afk.pp.ua/img/logo/amur-logo.png",
+"Металург Запоріжжя":"https://afk.pp.ua/img/logo/metalurg-z-logo.png"
 };
 
 const getTeamLogo = (teamName) => {
